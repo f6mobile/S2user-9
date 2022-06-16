@@ -8,4 +8,54 @@
     android:outlineAmbientShadowColor="#004CAF50"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".Menu"
-    tools:deviceIds="wear"/>
+    tools:deviceIds="wear">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:text=" Rooms"
+        android:textColor="#4CAF50"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="200dp"
+            android:layout_height="196dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/_karta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="164dp"
+            android:layout_height="168dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/_karta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="149dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/kartochka_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.wear.widget.BoxInsetLayout>

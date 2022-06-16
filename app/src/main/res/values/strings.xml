@@ -7,4 +7,5 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_menu">Menu</string>
     <string name="title_activity_logo">logo</string>
+    <string name="title_activity_stop">Stop</string>
 </resources>
